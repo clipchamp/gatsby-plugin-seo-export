@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-plugin-seo-export",
+  "name": "@clipchamp/gatsby-plugin-seo-export",
   "version": "1.0.0",
   "description": "A GatsbyJS plugin to export SEO information to a CSV",
   "main": "index.js",

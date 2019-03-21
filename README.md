@@ -17,3 +17,10 @@ plugins: [
   },
 ]
 ```
+
+Create a script in your `package.json` that sets the `SEO_EXPORT` environment variable to true
+```js
+    "scripts": {
+        "seo": "SEO_EXPORT=true npm run build"
+    }
+```

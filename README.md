@@ -13,14 +13,14 @@ Add it to your `gatsby-config.js`
 ```js
 plugins: [
   {
-      resolve: `gatsby-plugin-seo-export`,
+      resolve: `@clipchamp/gatsby-plugin-seo-export`,
   },
 ]
 ```
 
 Create a script in your `package.json` that sets the `SEO_EXPORT` environment variable to true
 ```js
-    "scripts": {
-        "seo": "SEO_EXPORT=true npm run build"
-    }
+"scripts": {
+    "seo": "SEO_EXPORT=true npm run build"
+}
 ```

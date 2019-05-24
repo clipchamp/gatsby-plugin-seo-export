@@ -1,5 +1,5 @@
 const { convertArrayToCSV } = require("convert-array-to-csv");
-const fs = require("fs");
+const fs = require("fs-extra");
 const cheerio = require("cheerio");
 const rimraf = require("rimraf");
 
@@ -11,16 +11,9 @@ function onPostBuild(postBuild) {
     Promise.all(
       postBuild
         .getNodesByType("SitePage")
-        .filter(node => fs.existsSync(`public${node.path}/index.html`))
+        .filter(async node => await fs.exists(`public${node.path}/index.html`.replace('//', '/')))
         .map(async node => {
-          const fileContents = await new Promise((resolve, reject) => {
-            fs.readFile(`public${node.path}/index.html`, (errors, data) => {
-              if (errors) {
-                reject(errors);
-              }
-              resolve(data);
-            });
-          });
+          const fileContents = await fs.readFile(`public${node.path}/index.html`.replace('//', '/'));
           const $ = cheerio.load(fileContents);
 
           const pageList = templateMap.get(node.componentChunkName) || [];

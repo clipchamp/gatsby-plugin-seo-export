@@ -6,7 +6,7 @@ Extracts common SEO tags from pages, and creates csv files for each template con
 
 Install the plugin:
 ```bash
-npm i gatsby-plugin-seo-export
+npm i @clipchamp/gatsby-plugin-seo-export
 ```
 
 Add it to your `gatsby-config.js`

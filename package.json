@@ -28,17 +28,17 @@
   "dependencies": {
     "@babel/runtime": "^7.4.0",
     "cheerio": "^1.0.0-rc.2",
-    "convert-array-to-csv": "^1.0.5",
-    "fs-extra": "^8.0.1",
-    "rimraf": "^2.6.3"
+    "convert-array-to-csv": "^2.0.0",
+    "fs-extra": "^10.0.0",
+    "rimraf": "^3.0.2"
   },
   "peerDependencies": {
-    "gatsby": "^2.0.0"
+    "gatsby": "^3.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.4.0",
-    "babel-preset-gatsby-package": "^0.1.4",
-    "cross-env": "^5.2.0"
+    "babel-preset-gatsby-package": "^1.8.0",
+    "cross-env": "^7.0.3"
   }
 }

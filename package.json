@@ -1,6 +1,6 @@
 {
   "name": "@clipchamp/gatsby-plugin-seo-export",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "A GatsbyJS plugin to export SEO information to a CSV",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/clipchamp/gatsby-plugin-seo-export#readme",
   "dependencies": {
-    "@babel/runtime": "^7.4.0",
+    "@babel/runtime": "^7.15.4",
     "cheerio": "^1.0.0-rc.2",
     "convert-array-to-csv": "^2.0.0",
     "fs-extra": "^10.0.0",
@@ -36,9 +36,9 @@
     "gatsby": "^3.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.4.0",
-    "babel-preset-gatsby-package": "^1.8.0",
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.5",
+    "babel-preset-gatsby-package": "^1.13.0",
     "cross-env": "^7.0.3"
   }
 }
